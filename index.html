@@ -69,8 +69,94 @@
           <small>© 2026 Maison Soleil</small>
         </footer>
       </aside>
-      <main>
-        <h1>Main</h1>
+      <main class="main-content">
+        <!-- dashboard-header -->
+        <header class="dashboard-header">
+          <div class="welcome-heading">
+            <p class="booking-status">Booking · Confirmed</p>
+
+            <h1>Bienvenue, <em>Lucia.</em></h1>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="button button-outline">
+              Print receipt
+            </button>
+
+            <button type="button" class="button button-dark">
+              Add to calendar
+            </button>
+          </div>
+        </header>
+
+        <!-- Articles -->
+        <div class="articles">
+          <!-- Booking Overview -->
+          <div class="booking-overview" id="stay">
+            <article class="booking-recipe">
+              <header class="receipt-header">
+                <div>
+                  <p class="eyebrow">Receipt</p>
+                  <h2>Your stay</h2>
+                </div>
+
+                <p class="receipt-number">
+                  № MS-2026<br />
+                  0421-AH
+                </p>
+              </header>
+              <!-- Check-in and check-out -->
+              <div class="stay-dates">
+                <div class="date-item">
+                  <p class="eyebrow">Check in</p>
+
+                  <time datetime="2026-04-25"> 25 Apr </time>
+
+                  <p>Saturday · 15:00</p>
+                </div>
+
+                <div class="date-item">
+                  <p class="eyebrow">Check out</p>
+
+                  <time datetime="2026-04-29"> 29 Apr </time>
+
+                  <p>Wednesday · 11:00</p>
+                </div>
+              </div>
+
+              <!-- Price breakdown -->
+              <dl class="price-breakdown">
+                <div>
+                  <dt>Room · La Garrigue × 4 nights</dt>
+                  <dd>€ 620.00</dd>
+                </div>
+
+                <div>
+                  <dt>Breakfast × 2 guests</dt>
+                  <dd>€ 96.00</dd>
+                </div>
+
+                <div>
+                  <dt>Tourist tax</dt>
+                  <dd>€ 14.40</dd>
+                </div>
+              </dl>
+              <!-- Total Paid -->
+              <div class="receipt-total">
+                <span class="eyebrow">Total paid</span>
+                <strong>€ 730.40</strong>
+              </div>
+              <footer class="receipt-footer">
+                <p class="eyebrow">Paid · Wise · GBP</p>
+
+                <img
+                  src="assets/images/icon-barcode.svg"
+                  alt="Booking reference barcode"
+                />
+              </footer>
+            </article>
+          </div>
+        </div>
+        <footer class="footer"></footer>
       </main>
     </section>
   </body>
