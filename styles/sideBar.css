@@ -62,7 +62,7 @@
 
 .weather-information {
   background-color: var(--Sun-200);
-  background-image: url("assets/images/icon-weather.svg");
+  background-image: url("../assets/images/icon-weather.svg");
   background-repeat: no-repeat;
   background-position-x: 18rem;
   background-position-y: -2rem;

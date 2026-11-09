@@ -56,9 +56,10 @@ body {
   width: 15rem;
   color: var(--Terracotta-600);
   display: none;
+  cursor: pointer;
 }
 
-.articles:active {
+.articles:hover {
   .sun {
     display: block;
   }
@@ -166,6 +167,7 @@ body {
   position: absolute;
   font-size: 1.4rem;
   bottom: 1rem;
+  cursor: pointer;
 }
 
 .card-hint span {
