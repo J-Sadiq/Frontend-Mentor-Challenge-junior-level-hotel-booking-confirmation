@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src-styles.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="./styles/src-styles.css" />
+    <link rel="stylesheet" href="./styles/sideBar.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <script defer src="script.js"></script>
     <title>Hotel Booking Confirmation</title>
   </head>
@@ -24,7 +26,7 @@
           <a href="#" class="logo">
             <img src="assets/images/logo.svg" alt="" />
           </a>
-          <button href="#" class="btn-close">X</button>
+          <button href="#" class="btn-close show">X</button>
         </header>
         <div class="sidebar-main">
           <nav class="sidebar-navigation">
@@ -101,70 +103,74 @@
         <!-- Articles -->
         <div class="articles">
           <!-- Booking Overview -->
-          <div class="booking-overview" id="stay">
-            <article class="booking-recipe">
-              <header class="receipt-header">
-                <div>
-                  <p class="eyebrow">Receipt</p>
-                  <h2>Your stay</h2>
-                </div>
 
-                <p class="receipt-number">
-                  № MS-2026<br />
-                  0421-AH
-                </p>
-              </header>
-              <!-- Check-in and check-out -->
-              <div class="stay-dates">
-                <div class="date-item">
-                  <p class="eyebrow">Check in</p>
-
-                  <time datetime="2026-04-25"> 25 Apr </time>
-
-                  <p>Saturday · 15:00</p>
-                </div>
-
-                <div class="date-item">
-                  <p class="eyebrow">Check out</p>
-
-                  <time datetime="2026-04-29"> 29 Apr </time>
-
-                  <p>Wednesday · 11:00</p>
-                </div>
+          <article class="booking-recipe">
+            <header class="receipt-header">
+              <div>
+                <p class="eyebrow">Receipt</p>
+                <h2>Your stay</h2>
               </div>
 
-              <!-- Price breakdown -->
-              <dl class="price-breakdown">
-                <div>
-                  <dt>Room · La Garrigue × 4 nights</dt>
-                  <dd>€ 620.00</dd>
-                </div>
+              <p class="receipt-number">
+                № MS-2026<br />
+                0421-AH
+              </p>
+            </header>
+            <!-- Check-in and check-out -->
+            <div class="stay-dates">
+              <div class="date-item">
+                <p class="eyebrow">Check in</p>
 
-                <div>
-                  <dt>Breakfast × 2 guests</dt>
-                  <dd>€ 96.00</dd>
-                </div>
+                <time datetime="2026-04-25"> 25 Apr </time>
 
-                <div>
-                  <dt>Tourist tax</dt>
-                  <dd>€ 14.40</dd>
-                </div>
-              </dl>
-              <!-- Total Paid -->
-              <div class="receipt-total">
-                <span class="eyebrow">Total paid</span>
-                <strong>€ 730.40</strong>
+                <p>Saturday · 15:00</p>
               </div>
-              <footer class="receipt-footer">
-                <p class="eyebrow">Paid · Wise · GBP</p>
 
-                <img
-                  src="assets/images/icon-barcode.svg"
-                  alt="Booking reference barcode"
-                />
-              </footer>
-            </article>
-          </div>
+              <div class="date-item">
+                <p class="eyebrow">Check out</p>
+
+                <time datetime="2026-04-29"> 29 Apr </time>
+
+                <p>Wednesday · 11:00</p>
+              </div>
+            </div>
+
+            <!-- Price breakdown -->
+            <dl class="price-breakdown">
+              <div>
+                <dt>Room · La Garrigue × 4 nights</dt>
+                <dd>€ 620.00</dd>
+              </div>
+
+              <div>
+                <dt>Breakfast × 2 guests</dt>
+                <dd>€ 96.00</dd>
+              </div>
+
+              <div>
+                <dt>Tourist tax</dt>
+                <dd>€ 14.40</dd>
+              </div>
+            </dl>
+            <!-- Total Paid -->
+            <div class="receipt-total">
+              <span class="eyebrow">Total paid</span>
+              <strong>€ 730.40</strong>
+            </div>
+            <footer class="receipt-footer">
+              <p class="eyebrow">Paid · Wise · GBP</p>
+
+              <img
+                src="assets/images/icon-barcode.svg"
+                alt="Booking reference barcode"
+              />
+            </footer>
+          </article>
+
+          <!-- Sun -->
+
+          <img class="sun" src="assets/images/icon-sun.svg" />
+
           <!-- Welcome card -->
 
           <article class="welcome-card">

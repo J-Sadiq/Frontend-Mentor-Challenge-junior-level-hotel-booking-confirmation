@@ -4,12 +4,11 @@ const mainContent = document.querySelector(".main-content");
 const btnClose = document.querySelector(".btn-close");
 
 btnNav.addEventListener("click", function () {
-  sideBar.style.display = "grid";
-  mainContent.style.display = "none";
-  btnClose.style.display = "block";
+  sideBar.classList.add("show");
+  btnClose.classList.add("show");
 });
 
 btnClose.addEventListener("click", function () {
-  sideBar.style.display = "none";
-  mainContent.style.display = "grid";
+  sideBar.classList.remove("show");
+  btnClose.classList.remove("show");
 });
